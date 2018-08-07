@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Boom">
+   <children>
+      <Label layoutX="27.0" layoutY="22.0" prefHeight="21.0" prefWidth="198.0" text="WARNING! SECONDS LEFT:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Text fx:id="text" layoutX="27.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="122.13671875">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Text>
+      <ProgressBar fx:id="progress" layoutX="28.0" layoutY="118.0" prefHeight="18.0" prefWidth="545.0" progress="1.0" />
+      <Label layoutX="27.0" layoutY="159.0" prefHeight="21.0" prefWidth="254.0" text="SOLVE RIDDLE TO STOP THE CLOCK:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="197.0" prefHeight="21.0" prefWidth="534.0" text="I AM THINKING OF A NUMBER BETWEEN 0 AND 100, CAN YOU GUESS IT?" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input" layoutX="207.0" layoutY="244.0" onKeyPressed="#onNumEnter" prefHeight="47.0" prefWidth="149.0" />
+      <Text fx:id="output" fill="RED" layoutX="136.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oops, you are too low!" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
